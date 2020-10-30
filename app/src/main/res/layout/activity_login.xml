@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="registerlogin.LoginActivity">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp">
+        <EditText
+            android:id="@+id/etEmailLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_corner_search"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawablePadding="4dp"
+            android:hint="@string/email_address"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:autofillHints="Email Address" />
+
+        <EditText
+            android:id="@+id/etPasswordLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etEmailLog"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_corner_search"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="4dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:autofillHints="Password" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etPasswordLog"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_corner"
+            android:text="Login"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/txtBacktoreg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnLogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Back to Register"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
